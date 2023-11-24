@@ -11,3 +11,175 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  color: white;
+  background-color: rgb(0 0 0 /62%);
+  width: fit-content;
+  margin: 0px;
+  position: relative;
+  top: 20px;
+  left: 400px;
+  padding:1rem;
+}
+
+ul.col {
+  list-style-type: none;
+  text-decoration-line: none;
+}
+
+a.btn {
+  text-decoration-line: none ;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  margin: .4rem;
+  width: 176px;
+  height: 24px;
+  border-radius: 24px;
+  border: 1px solid #3d3d3d;
+  box-shadow: rgb(0 0 0 /12%) 0px 8px 24px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+a.btn:hover{
+  border: 1px solid #3d3d3d;
+  box-shadow: rgb(0 0 0 /80%) 0px 8px 24px;
+}
+
+.vending.col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.vending {
+  background-image: url(./assets/VendMachine.png);
+  width: 1280px;
+  height: 720px;
+  background-repeat: no-repeat;
+}
+
+.vndnav{
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  width: 1100px;
+}
+
+li.card {
+  padding: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a.logobttn {
+  text-decoration-line: none ;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  margin: .4rem;
+  width: 176px;
+  height: 24px;
+  border-radius: 24px;
+  border: 1px solid #3d3d3d;
+  box-shadow: rgb(0 0 0 /12%) 0px 8px 24px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+a.bttn {
+  text-decoration-line: none ;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  margin: .4rem;
+  width: 40px;
+  height: 24px;
+  border-radius: 24px;
+  border: 1px solid #3d3d3d;
+  box-shadow: rgb(0 0 0 /12%) 0px 8px 24px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+a.logobttn:hover {
+  border: 1px solid #3d3d3d;
+  box-shadow: rgb(0 0 0 /80%) 0px 8px 24px;
+}
+
+a.bttn:hover {
+  border: 1px solid #3d3d3d;
+  box-shadow: rgb(0 0 0 /80%) 0px 8px 24px;
+}
+
+a.bttn.active {
+  background-color: rgb(250, 101, 101);
+}
+
+nav {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
+.row {
+  display: flex;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
+span {
+  width: 500px;
+}
+
+.soda-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.soda-display {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: background-color 0.5s ease;
+}
+
+.orange {
+  background: linear-gradient(90deg, #FFA500, #FFD700);
+}
+
+.grape {
+  background: linear-gradient(90deg, #800080, #6A5ACD);
+}
+
+.pineapple {
+  background: linear-gradient(90deg, #8d7f34, #FFFF00);
+}
+
+.apple {
+  background: linear-gradient(90deg, #bf2713, #746720);
+}
+
+.lemonlime {
+  background: linear-gradient(90deg, #119d0c, #e2e606);
+}
+
+.gcc {
+  background: linear-gradient(90deg, #a2933c, #eac003);
+}
