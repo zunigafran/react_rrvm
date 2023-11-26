@@ -147,7 +147,6 @@ span {
 
 .soda-container {
   text-align: center;
-  margin: 20px;
 }
 
 .soda-display {
@@ -182,4 +181,59 @@ span {
 
 .gcc {
   background: linear-gradient(90deg, #a2933c, #eac003);
+}
+
+.nuts-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.nut-image {
+  cursor: pointer;
+}
+
+.nut-image img {
+  max-width: 100px;
+}
+
+.nut-image.shake {
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.nut-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.nut-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.nut-item.selected {
+  background-color: #ddd;
+}
+
+.circle {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
 }
